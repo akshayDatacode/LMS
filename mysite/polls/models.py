@@ -7,3 +7,14 @@ class Article(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class StudentData(models.Model):
+	student_name = models.CharField(max_length=40)
+	email_address = models.EmailField(max_length=100)
+	student_password = models.CharField(max_length=20)
+	
+
+	def __str__(self):
+		return self.student_name
+		
