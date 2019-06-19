@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Articles</title>
+</head>
+<body>       
+  <h1>DATACODE ARTICLE SITE </h1>
+  {% for data in article %}
+        <br>
+  	{% if forloop.counter0 == 1  %}
+	  	<h2>TITLE :-{{ data.title }}</h2>
+	       {{ data.description }}
+  	{% endif %}
+  {% endfor %}
+</body>
+</html>
